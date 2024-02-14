@@ -62,7 +62,7 @@ a:hover {
   font-size: 2rem;
 }
 
-.projects {
+.project {
   padding: 5rem 0 0 0;
   height: 100vh;
   display: flex;
@@ -71,7 +71,7 @@ a:hover {
   align-items: center;
 }
 
-.projects > h1 {
+.project > h1 {
   color: #f1f1f1;
   text-align: center;
   font-size: 2rem;
@@ -85,16 +85,125 @@ a:hover {
   justify-content: space-around;
 }
 
-.album .card {
+.album .project-tile {
   width: 20rem;
   padding: 2rem;
   border: 3px dashed #30363D;
   border-radius: 8px;
-  color: #E6EDF3;
   transition-duration: 0.8s;
   font-family: 'JetBrains Mono', sans-serif;
 }
 
-.album .card:hover {
+.project-tile a {
+  text-decoration: none;
+  color: #E6EDF3;
+}
+
+.album .project-tile:hover {
   border: 3px dashed #E6EDF3;
+}
+
+.profile-link {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.profile-link div {
+  text-align: center;
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+.profile-link > div > p {
+  font-size: 2rem;
+  color: #f1f1f1;
+  font-weight: 600;
+}
+.profile-link > div > i {
+  color: #646464;
+}
+
+.profile-link > .contact > .github {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  text-decoration: none;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease-out;
+}
+
+.profile-link > .contact > .github:hover {
+  color: #f1f1f1;
+  top: 10px;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-family: 'JetBrains Mono', sans-serif;
+  color: #646464;
+}
+
+@media screen and (max-width: 1230px) {
+  nav {
+    padding: 0.8rem;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .home > div > h1 {
+    font-size: 1.5rem;
+  }
+
+  .home > div > i {
+    font-size: 1rem;
+  }
+
+  .project {
+    padding: 0;
+  }
+
+  .project > h1 {
+    font-size: 1.5rem;
+  }
+
+  .album {
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .profile-link {
+    height: auto;
+    gap: 2rem;
+  }
+
+  .album .project-tile {
+    text-align: center;
+  }
+
+  .profile-link > div > p {
+    font-size: 1.5rem;
+  }
+
+  .profile-link > div > i {
+    font-size: 0.9rem;
+  }
+
+  .profile-link > .contact > .github {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding-top: 5rem;
+    font-size: 0.8rem;
+  }
+
+
 }
