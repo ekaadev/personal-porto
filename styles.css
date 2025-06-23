@@ -80,9 +80,13 @@ a:hover {
 
 .album {
   margin: 5rem auto;
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
 }
 
 .album .project-tile {
